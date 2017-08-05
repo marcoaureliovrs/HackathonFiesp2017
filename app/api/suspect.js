@@ -1,3 +1,4 @@
+
 var mongoose = require('mongoose');
 var api = {};
 var model = mongoose.model('Suspect');
@@ -42,7 +43,7 @@ api.updateSuspect = function (req, res) {
 				res.status(500).json(error);
 			})
 }
-
+        
 api.deleteSuspect = function (req, res) {
 	model
 		.remove({_id: req.body.id})
