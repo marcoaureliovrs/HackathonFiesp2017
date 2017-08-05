@@ -4,6 +4,8 @@ var consign = require('consign');
 var bodyParser = require('body-parser');
 
 //Configurações do express
+
+app.set('secret','hackathon');
 app.use(express.static('./public'));
 app.use(bodyParser.json());
 

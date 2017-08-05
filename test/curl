@@ -1,0 +1,54 @@
+Documento responsável por listar os possíveis curls que podem ser executados na aplicação.
+Acesse via terminal até a pasta aonde esse arquivo esta alocado e execute os comandos listados abaixo:
+
+
+
+=================================================================================================================
+=>Usuários<=
+Para poder inserir ou fazer atualizações na tabela de Usuarios o JSON deve seguir o seguinte modelo:
+
+
+Inclusão / Atualização
+{
+	"company_name": "Teste Ltda.", 
+	"fantasy_name": "4Party", 
+	"email": "teste@4party.com.br", 
+	"passwd": "supertest123", 
+	"cnpj": "88908668000182", 
+	"date_of_birth_company": "07-26-1992"
+}
+
+
+=================================================================================================================
+POST - Cadastro de novos usuários na base, endpoint exposto devido a sua caracteristica de cadastro.
+
+curl http://localhost:3000/users -X POST -v -H "Content-type: application/json" -d @jsons/createUserPost.json | json_pp
+
+=================================================================================================================
+=>Autenticação<=
+Para poder se autenticar basta enviar o email e senha  para http://localhost:3000/auth, conforme exemplo abaixo:
+
+curl http://localhost:3000/auth -X POST -v -H "Content-type: application/json" -d @jsons/authTest.json | json_pp
+
+=================================================================================================================
+GET - Consulta dos próprios dados cadastrais do usuário autenticado enviando o respectivo token da requisição
+
+curl http://localhost:3000/user -X GET -v -H "Content-type: application/json" -H "x-access-token: Key!"
+
+=================================================================================================================
+PUT - Atualização de usuário, só é permitido ao próprio usuário que esta requisitando a aplicação, uma vez que é validado se o token gerado é o do próprio usuário que esta atualizando seus dados.
+
+curl http://localhost:3000/users/10000 -X PUT -v -H "Content-type: application/json" -H "x-access-token: KEY!" -d @jsons/tarefaTestePut.json | json_pp
+
+=================================================================================================================
+DELETE - Deleção de usuário, só é permito ao próprio usuário que esta requisitando a aplicação, uma vez que validado se o token gerado é do próprio usuário que esta deletando seu cadastro.
+
+curl http://localhost:3000/user -X DELETE -v -H "Content-type: application/json" -H "x-access-token: Key!" | json_pp
+
+=================================================================================================================
+
+
+=================================================================================================================
+GET - A consulta tem que ser feita com um token de um usuário que possui permissão de consulta aos usuários da base, cuidado que essa consulta é critica e qualquer vazamento dela pode trazer grandes prejuízos
+
+curl http://localhost:3000/users -X GET -v -H "Content-type: application/json" -H "x-access-token: Key!"
