@@ -1,0 +1,35 @@
+{
+  "name": "hackathonfiesp2017",
+  "version": "1.0.0",
+  "description": "Hackathon Fiesp 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcogorak/HackathonFiesp2017.git"
+  },
+  "keywords": [
+    "hackathon",
+    "fiesp"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcogorak/HackathonFiesp2017/issues"
+  },
+  "homepage": "https://github.com/marcogorak/HackathonFiesp2017#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "consign": "^0.1.6",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.2",
+    "mongoose": "^4.11.5"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "supertest": "^3.0.0"
+  }
+}
