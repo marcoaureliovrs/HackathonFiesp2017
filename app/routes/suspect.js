@@ -5,7 +5,6 @@ module.exports = function (app) {
 		.get(api.list);
 
 	app.route("/suspect")
-		.get(api.readSuspect)
 		.delete(api.deleteSuspect)
 		.put(api.updateSuspect);
 }

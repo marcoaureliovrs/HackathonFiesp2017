@@ -7,7 +7,7 @@ module.exports = function (app) {
 	api.autentica = function (req, res) {
 		model
 			.findOne({email: req.body.email, passwd: req.body.passwd})
-			.select('email _id')
+			.select('permission email _id')
 			.then(function(user) {
 				if (!user) {
 					console.log('Login e senha inválidos');

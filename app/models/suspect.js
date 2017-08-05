@@ -1,8 +1,8 @@
 var mongoose = require ('mongoose');
 var schema = mongoose.Schema({
     geo_location: [{
-        lat: Number,
-        lug: Number
+        lat: String,
+        lug: String
     }],
     description: {
         type: String
@@ -15,13 +15,13 @@ var schema = mongoose.Schema({
         default: Date.now
     },
     attach: [{
-        archive1: Stirng,
-        archive2: Stirng,
-        archive3: Stirng,
-        archive4: Stirng,
-        archive5: Stirng,
-        archive6: Stirng,
-        archive7: Stirng
+        archive1: String,
+        archive2: String,
+        archive3: String,
+        archive4: String,
+        archive5: String,
+        archive6: String,
+        archive7: String
     }]
 
 });
