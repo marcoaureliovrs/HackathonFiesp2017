@@ -198,6 +198,8 @@ module.exports = {
     //    context.global.os
 
     functionGlobalContext: {
+        webcrawler:require('node-webcrawler'),
+        urlcrawler:require('url')
         // os:require('os'),
         // octalbonescript:require('octalbonescript'),
         // jfive:require("johnny-five"),
