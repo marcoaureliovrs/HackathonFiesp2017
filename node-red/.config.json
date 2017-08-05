@@ -422,6 +422,42 @@
      "file": "/usr/local/Cellar/nvm/0.33.2/versions/node/v6.9.5/lib/node_modules/node-red/node_modules/node-red-node-twitter/27-twitter.js"
     }
    }
+  },
+  "node-red-contrib-async": {
+   "name": "node-red-contrib-async",
+   "version": "0.0.4",
+   "local": false,
+   "nodes": {
+    "async": {
+     "name": "async",
+     "types": [
+      "async"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red-contrib-async",
+     "file": "/usr/local/Cellar/nvm/0.33.2/versions/node/v6.9.5/lib/node_modules/node-red-contrib-async/async.js"
+    }
+   }
+  },
+  "node-red-node-mongodb": {
+   "name": "node-red-node-mongodb",
+   "version": "0.0.13",
+   "local": true,
+   "nodes": {
+    "mongo": {
+     "name": "mongo",
+     "types": [
+      "mongodb",
+      "mongodb out",
+      "mongodb in"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-mongodb",
+     "file": "/Users/user/projects/HackathonFiesp2017/node-red/node_modules/node-red-node-mongodb/66-mongodb.js"
+    }
+   }
   }
  },
  "_credentialSecret": "e6d4874a4d85d696fad35317b7e6b136c5766161d22de2472afeb56b5652bf9c"
