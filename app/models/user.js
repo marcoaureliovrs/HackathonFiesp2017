@@ -20,6 +20,10 @@ var schema = mongoose.Schema({
 		required: true,
 		unique: false
 	},
+	permision: {
+		type: Number,
+		default: 1
+	},
 	date_of_birth: {
 		type: Date,
 		required: false
