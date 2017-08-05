@@ -38,10 +38,10 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "repeat": "1",
+        "repeat": "",
         "crontab": "",
         "once": false,
-        "x": 150,
+        "x": 140,
         "y": 300,
         "wires": [
             [

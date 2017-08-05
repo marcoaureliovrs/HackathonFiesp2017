@@ -120,7 +120,7 @@
         "wires": [
             [
                 "e9d4f581.feb5c8",
-                "76ea921a.a5e43c"
+                "3732388b.7f23f8"
             ]
         ],
         "outputLabels": [
@@ -141,5 +141,21 @@
         "x": 950,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "3732388b.7f23f8",
+        "type": "function",
+        "z": "22d32647.d1258a",
+        "name": "prepar",
+        "func": "\nvar contratos = mensage.payload._embedded;\nvar proxima = mensage.payload.next.href;\nmensage.payload = contratos;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "76ea921a.a5e43c"
+            ]
+        ]
     }
 ]
