@@ -6,7 +6,6 @@ var model = mongoose.model('Suspect');
 
 api.list = function (req, res) {
 	//TODO: Verificar o compartamento quando o campo _id não for fornecido na requisição
-	if (req.usuario.permision=3) {
 		model
 		.find({})
 		.then(function(suspects) {
@@ -15,11 +14,6 @@ api.list = function (req, res) {
 				console.log(error);
 				res.status(500).json(error);
 			})	
-	} else {
-		res.send({messagem: "Usuário sem permissão para realizar esta operação"})
-		return res.status(401);
-	}
-	
 }
 
 api.upload = function (req,res) {
@@ -39,6 +33,7 @@ api.upload = function (req,res) {
 
 api.add = function (req, res) {
 	var suspect = req.body;
+	console.log(req.body);
 	model
 		.create(suspect)
 		.then(function(suspect) {

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="blue">#00ffff</color>
+    <color name="gray_1">#E0E0E0</color>
+    <color name="gray_2">#C0C0C0</color>
+    <color name="gray_3">#909090</color>
+    <color name="gray_4">#707070</color>
+    <color name="gray_5">#505050</color>
+    <color name="gray_6">#484848</color>
+    <color name="green">#0ff0ff</color>
+    <color name="green_8bc34a">#8bc34a</color>
+    <color name="light_red">#F75D59</color>
+    <color name="red">#FF0000</color>
+    <color name="red_FF3300">#FF3300</color>
+    <color name="red_FF3333">#FF3333</color>
+    <!-- asdf -->
+    <color name="red_FF6600">#FF6600</color>
+    <color name="red_FF6633">#FF6633</color>
+    <color name="red_FF6656">#FF6656</color>
+    <color name="red_FF6699">#FF6699</color>
+    <color name="red_DB6972">#db6972</color>
+    <!-- asdf -->
+    <color name="red_EFBFC2">#efbfc2</color>
+    <!-- asdf -->
+    <color name="red_EAA9AE">#eaa9ae</color>
+    <color name="red_E5949A">#e5949a</color>
+    <color name="red_E07F86">#e07f86</color>
+    <color name="white">#ffffffff</color>
+    <!--http://www.w3schools.com/tags/ref_colorpicker.asp-->
+    <!--http://developer.android.com/design/style/color.html-->
+    <color name="blue_actionbar">#006B8F</color>
+    <color name="blue_background">#E6F5FA</color>
+    <color name="red_order_sell_background">#FFECEC</color>
+    <color name="red_order_sell_actionbar">#8F0000</color>
+    <color name="red_order_sell_list_item">#FFDADA</color>
+    <color name="green_order_buy_background">#F5FAE6</color>
+    <color name="green_order_buy_actionbar">#476B00</color>
+    <color name="green_order_buy_list_item">#EBF5CC</color>
+
+    <color name="swipe_color_1">#B6DB49</color>
+    <color name="swipe_color_2">#99CC00</color>
+    <color name="swipe_color_3">#8ABD00</color>
+    <color name="swipe_color_4">#7CAF00</color>
+
+    <color name="whiteText">#E0FFFFFF</color>
+    <!-- more colors... -->
+</resources>
