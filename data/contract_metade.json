@@ -1,0 +1,243 @@
+{
+	"links": {
+		"self": {
+			"href": "http://compras.dados.gov.br:8080/contratos/v1/contratos.json",
+			"title": "Lista de contratos"
+		},
+		"first": {
+			"href": "/contratos/v1/contratos.json?offset=0",
+			"title": "Primeira pÃ¡gina"
+		},
+		"next": {
+			"href": "/contratos/v1/contratos.json?offset=500",
+			"title": "PrÃ³xima pÃ¡gina"
+		}
+	},
+	"embedded": {
+		"contratos": [{
+			"identificador": "19312250000010017",
+			"uasg": 193122,
+			"modalidade_licitacao": 5,
+			"numero_aviso_licitacao": 102016,
+			"codigo_contrato": 50,
+			"licitacao_associada": "19312205000102016",
+			"origem_licitacao": "SISRP",
+			"numero": 10017,
+			"objeto": "Registro de Pre\u001Aos para aquisi\u001A\u001Ao parce lado de combust\u001Avel para atendimento \u001As demandas de manejo de fauna silvrestre e combate a Inc\u001Andios Florestais.",
+			"numero_processo": "02025000574201609",
+			"cnpj_contratada": "00376437000124",
+			"data_assinatura": "2017-02-03",
+			"fundamento_legal": "Lei 8.666/93 e demais dispositivos que regem a mat\u001Aria.",
+			"data_inicio_vigencia": "2017-02-03",
+			"data_termino_vigencia": "2018-02-02",
+			"valor_inicial": 15491.64,
+			"links": {
+				"self": {
+					"href": "/contratos/id/contrato/19312250000010017",
+					"title": "CONTRATO                                           193122.50.00001.0017"
+				},
+				"aditivos": {
+					"href": "/contratos/id/contrato/19312250000010017/aditivos",
+					"title": "Aditivos do Contrato"
+				},
+				"apostilamentos": {
+					"href": "/contratos/id/contrato/19312250000010017/apostilamentos",
+					"title": "Apostilamentos do Contrato"
+				},
+				"eventos": {
+					"href": "/contratos/id/contrato/19312250000010017/eventos",
+					"title": "Eventos do Contrato"
+				},
+				"fornecedor": {
+					"href": "/fornecedores/id/fornecedor_pj/00376437000124",
+					"title": "Fornecedor 00376437000124: AUTO POSTO ABEL GALINHA LIMITADA -"
+				},
+				"licitacao": {
+					"href": "/licitacoes/id/licitacao/19312205000102016",
+					"title": "LicitaÃ§Ã£o 19312205000102016"
+				},
+				"modalidade_licitacao": {
+					"href": "/licitacoes/id/modalidade_licitacao/5",
+					"title": "Modalidade de LicitaÃ§Ã£o 5: PREGÃƒO                                            "
+				},
+				"tipo_contrato": {
+					"href": "/contratos/id/tipo_contrato/50",
+					"title": "Tipo de Contrato 50: CONTRATO                                          "
+				},
+				"uasg": {
+					"href": "/licitacoes/id/uasg/193122",
+					"title": "UASG 193122: IBAMA - SUPERINTENDENCIA ESTADUAL/RR"
+				}
+			}
+		}, {
+			"identificador": "38093150000011014",
+			"uasg": 380931,
+			"modalidade_licitacao": 5,
+			"numero_aviso_licitacao": 232013,
+			"codigo_contrato": 50,
+			"licitacao_associada": "38093105000232013",
+			"origem_licitacao": "SISPP",
+			"numero": 11014,
+			"objeto": "Presta\u001A\u001Ao de Servi\u001Aos de Vigil\u001Ancia Des armada para atender a sede da SRTE/AL e suas un idades Descentralizadas.",
+			"numero_aditivo": 3,
+			"numero_processo": "46201006411201376",
+			"cnpj_contratada": "11179264000766",
+			"data_assinatura": "2014-03-10",
+			"fundamento_legal": "Lei 8.666/93, Dec 2.271/97 e IN SLTI n\u001A 02/08.",
+			"data_inicio_vigencia": "2014-03-18",
+			"data_termino_vigencia": "2015-03-17",
+			"valor_inicial": 481514.00,
+			"links": {
+				"self": {
+					"href": "/contratos/id/contrato/38093150000011014",
+					"title": "CONTRATO                                           380931.50.00001.1014"
+				},
+				"aditivos": {
+					"href": "/contratos/id/contrato/38093150000011014/aditivos",
+					"title": "Aditivos do Contrato"
+				},
+				"apostilamentos": {
+					"href": "/contratos/id/contrato/38093150000011014/apostilamentos",
+					"title": "Apostilamentos do Contrato"
+				},
+				"eventos": {
+					"href": "/contratos/id/contrato/38093150000011014/eventos",
+					"title": "Eventos do Contrato"
+				},
+				"fornecedor": {
+					"href": "/fornecedores/id/fornecedor_pj/11179264000766",
+					"title": "Fornecedor 11179264000766: PRESERVE SEGURANCA E TRANSPORTE DEVALORES LTDA"
+				},
+				"licitacao": {
+					"href": "/licitacoes/id/licitacao/38093105000232013",
+					"title": "LicitaÃ§Ã£o 38093105000232013"
+				},
+				"modalidade_licitacao": {
+					"href": "/licitacoes/id/modalidade_licitacao/5",
+					"title": "Modalidade de LicitaÃ§Ã£o 5: PREGÃƒO                                            "
+				},
+				"tipo_contrato": {
+					"href": "/contratos/id/tipo_contrato/50",
+					"title": "Tipo de Contrato 50: CONTRATO                                          "
+				},
+				"uasg": {
+					"href": "/licitacoes/id/uasg/380931",
+					"title": "UASG 380931: DELEG.REG. DO TRAB/ALAGOAS"
+				}
+			}
+		}, {
+			"identificador": "15303254000011978",
+			"uasg": 153032,
+			"modalidade_licitacao": 3,
+			"numero_aviso_licitacao": 11978,
+			"codigo_contrato": 54,
+			"licitacao_associada": "15303203000011978",
+			"origem_licitacao": "SISPP",
+			"numero": 11978,
+			"objeto": "Concess\u001Ao de pr\u001Adio no Campus da UFLA",
+			"numero_aditivo": 3,
+			"numero_processo": "0001/78",
+			"cnpj_contratada": "20372967000101",
+			"data_assinatura": "1978-06-30",
+			"fundamento_legal": "Lei 8.666 Modalidade Concorr\u001Ancia",
+			"data_inicio_vigencia": "1978-06-30",
+			"data_termino_vigencia": "1979-12-31",
+			"valor_inicial": 111132.00,
+			"links": {
+				"self": {
+					"href": "/contratos/id/contrato/15303254000011978",
+					"title": "CONCESSÃƒO                                          153032.54.00001.1978:Concess\u001Ao de pr\u001Adio no Campus da UFLA"
+				},
+				"aditivos": {
+					"href": "/contratos/id/contrato/15303254000011978/aditivos",
+					"title": "Aditivos do Contrato"
+				},
+				"apostilamentos": {
+					"href": "/contratos/id/contrato/15303254000011978/apostilamentos",
+					"title": "Apostilamentos do Contrato"
+				},
+				"eventos": {
+					"href": "/contratos/id/contrato/15303254000011978/eventos",
+					"title": "Eventos do Contrato"
+				},
+				"fornecedor": {
+					"href": "/fornecedores/id/fornecedor_pj/20372967000101",
+					"title": "Fornecedor 20372967000101: SAULO FIDELIS COSTA PEREIRA ME"
+				},
+				"licitacao": {
+					"href": "/licitacoes/id/licitacao/15303203000011978",
+					"title": "LicitaÃ§Ã£o 15303203000011978"
+				},
+				"modalidade_licitacao": {
+					"href": "/licitacoes/id/modalidade_licitacao/3",
+					"title": "Modalidade de LicitaÃ§Ã£o 3: CONCORRÃŠNCIA                                      "
+				},
+				"tipo_contrato": {
+					"href": "/contratos/id/tipo_contrato/54",
+					"title": "Tipo de Contrato 54: CONCESSÃƒO                                         "
+				},
+				"uasg": {
+					"href": "/licitacoes/id/uasg/153032",
+					"title": "UASG 153032: UNIVERSIDADE FEDERAL DE LAVRAS/MEC/MG"
+				}
+			}
+		}, {
+			"identificador": "17012050000011997",
+			"uasg": 170120,
+			"modalidade_licitacao": 6,
+			"numero_aviso_licitacao": 21997,
+			"codigo_contrato": 50,
+			"licitacao_associada": "17012006000021997",
+			"origem_licitacao": "SISPP",
+			"numero": 11997,
+			"objeto": "Contrato n.01/97 tem por objeto a loca\u001A\u001Ao do im\u001Avel situado \u001A  Av. Cardoso Moreira, n\u001A 623, Centro, Itaperuna, Estado do Rio de Janeiro.",
+			"numero_aditivo": 4,
+			"numero_processo": "13732000537/96-63",
+			"cpfContratada": "***834187**:200507",
+			"data_assinatura": "1997-12-30",
+			"fundamento_legal": "Inciso X, artigo 24 da Lei 8.666/93",
+			"data_inicio_vigencia": "1997-12-30",
+			"data_termino_vigencia": "2000-12-29",
+			"valor_inicial": 151200.00,
+			"links": {
+				"self": {
+					"href": "/contratos/id/contrato/17012050000011997",
+					"title": "CONTRATO                                           170120.50.00001.1997"
+				},
+				"aditivos": {
+					"href": "/contratos/id/contrato/17012050000011997/aditivos",
+					"title": "Aditivos do Contrato"
+				},
+				"apostilamentos": {
+					"href": "/contratos/id/contrato/17012050000011997/apostilamentos",
+					"title": "Apostilamentos do Contrato"
+				},
+				"eventos": {
+					"href": "/contratos/id/contrato/17012050000011997/eventos",
+					"title": "Eventos do Contrato"
+				},
+				"fornecedor": {
+					"href": "/fornecedores/id/fornecedor_pf/200507",
+					"title": "Fornecedor 200507: JOAO CARLOS SOARES MARTINS"
+				},
+				"licitacao": {
+					"href": "/licitacoes/id/licitacao/17012006000021997",
+					"title": "LicitaÃ§Ã£o 17012006000021997"
+				},
+				"modalidade_licitacao": {
+					"href": "/licitacoes/id/modalidade_licitacao/6",
+					"title": "Modalidade de LicitaÃ§Ã£o 6: DISPENSA DE LICITAÃ‡ÃƒO                             "
+				},
+				"tipo_contrato": {
+					"href": "/contratos/id/tipo_contrato/50",
+					"title": "Tipo de Contrato 50: CONTRATO                                          "
+				},
+				"uasg": {
+					"href": "/licitacoes/id/uasg/170120",
+					"title": "UASG 170120: DELEGACIA DA REC.FEDERAL EM CAMPOS GOITACAZES"
+				}
+			}
+		}]
+	},
+	"count": 572300
+}
