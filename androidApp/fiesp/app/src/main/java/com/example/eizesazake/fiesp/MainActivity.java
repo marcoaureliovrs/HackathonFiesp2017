@@ -3,20 +3,20 @@ package com.example.eizesazake.fiesp;
 import android.Manifest;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
-import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
@@ -65,6 +65,8 @@ public class MainActivity extends Activity
 
     private String latlong;
 
+    private Ringtone r;
+
     private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -74,15 +76,15 @@ public class MainActivity extends Activity
 
             String address = internalDBService.getmPrefs().getString(InternalDBService.ADDRESS, null);
 
-            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-            NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(activity);
 
-
-                notificationBuilder.setContentTitle("Verifique essa obra pública localizada em: ");
-                notificationBuilder.setContentText(address);
-                notificationBuilder.setSmallIcon(android.R.drawable.ic_dialog_alert);
-                Uri sound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-                notificationBuilder.setSound(sound);
+//            if(alert == null){
+                // alert is null, using backup
+            Uri alert = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
+            r = RingtoneManager.getRingtone(getApplicationContext(), alert);
+            r.play();
+            AlertDialog.Builder builder = new AlertDialog.Builder(context);
+            builder.setTitle("Alerta Fiscal Cidação");
+            builder.setMessage("Confirme a situação da obra localizada em: " + address).show();
         }
     };
 
@@ -366,5 +368,6 @@ public class MainActivity extends Activity
         super.onStop();
 
         unregisterReceiver(broadcastReceiver);
+        r.stop();
     }
 }
