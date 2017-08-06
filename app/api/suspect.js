@@ -42,7 +42,8 @@ api.add = function (req, res) {
 	model
 		.create(suspect)
 		.then(function(suspect) {
-			res.json(suspect);
+			console.log(suspect);
+			res.json({"result":"Ok"});
 			}, function(error) {
 				console.log(error);
 				res.status(500).json(error);

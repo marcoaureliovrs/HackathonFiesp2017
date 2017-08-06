@@ -1,6 +1,23 @@
+var geolib = require('geolib');
 var mongoose = require('mongoose');
 var api = {};
 var model = mongoose.model('User');
+
+
+var result;
+
+api.search = function(req, res) {
+   result = geolib.getDistance(
+    	{latitude: req.body.lat, longitude: req.body.lng},
+    	{latitude: "51° 31' N", longitude: "7° 28' E"}
+	);
+	
+    if(result <100) {
+    	res.json({"alarme":"ok"});
+    } else {
+    	res.json({"alarme":""});
+    }
+}
 
 api.list = function (req, res) {
 		model

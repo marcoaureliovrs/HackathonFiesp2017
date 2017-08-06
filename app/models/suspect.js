@@ -1,7 +1,11 @@
 var mongoose = require ('mongoose');
 var schema = mongoose.Schema({
-    lat: String,
-    log: String,
+    lat: {
+        type: String
+    },
+    log: {
+        type: String
+    },
     description: {
         type: String
     },
@@ -12,13 +16,27 @@ var schema = mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    archive1: String,
-    archive2: String,
-    archive3: String,
-    archive4: String,
-    archive5: String,
-    archive6: String,
-    archive7: String
+    archive1: {
+        type: String
+    },
+    archive2: {
+        type: String
+    },
+    archive3: {
+        type: String
+    },
+    archive4: {
+        type: String
+    },
+    archive5: {
+        type: String
+    },
+    archive6: {
+        type: String
+    },
+    archive7: {
+        type: String
+    }
 });
 
 module.exports = mongoose.model('Suspect', schema);
