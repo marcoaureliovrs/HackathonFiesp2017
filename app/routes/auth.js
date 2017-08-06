@@ -6,6 +6,6 @@ module.exports = function (app) {
 	app.get('/webhook', apiWebhook.verify);
 	app.post('/webhook', apiWebhook.sendRecive);
 	app.post('/users', apiUser.add);
-	app.post('/auth', api.autentica);
-	app.use('/*', api.verificaToken);
+	//app.post('/auth', api.autentica);
+	//app.use('/*', api.verificaToken);
 };
