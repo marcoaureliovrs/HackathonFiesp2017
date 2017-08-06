@@ -25,6 +25,7 @@
     "body-parser": "^1.17.2",
     "consign": "^0.1.6",
     "express": "^4.15.3",
+    "express-fileupload": "^0.1.4",
     "jsonwebtoken": "^7.4.2",
     "mongoose": "^4.11.5",
     "node-webcrawler": "^0.8.0",

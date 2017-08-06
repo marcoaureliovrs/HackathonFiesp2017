@@ -2,7 +2,9 @@ module.exports = function (app) {
 	var api=app.api.auth;
 	var apiUser = app.api.user;
 	var apiWebhook = app.api.webhook;
+	var apiSuspect = app.api.suspect;
 
+	app.post('/upload', apiSuspect.upload);
 	app.get('/webhook', apiWebhook.verify);
 	app.post('/webhook', apiWebhook.sendRecive);
 	app.post('/users', apiUser.add);
