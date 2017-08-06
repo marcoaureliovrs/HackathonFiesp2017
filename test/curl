@@ -19,16 +19,25 @@ Inclusão / Atualização
 }
 
 
+curl -F "image=@/test.jpg" http://localhost:3000/upload -X POST
+
 =================================================================================================================
 POST - Cadastro de novos usuários na base, endpoint exposto devido a sua caracteristica de cadastro.
 
 curl http://localhost:3000/users -X POST -v -H "Content-type: application/json" -d @jsons/createUserPost.json | json_pp
+curl https://hackathonfiesp2017-marcogorak.c9users.io/users -X POST -v -H "Content-type: application/json" -d @jsons/createUserPost.json | json_pp
+
+
+
 
 =================================================================================================================
 =>Autenticação<=
 Para poder se autenticar basta enviar o email e senha  para http://localhost:3000/auth, conforme exemplo abaixo:
 
 curl http://localhost:3000/auth -X POST -v -H "Content-type: application/json" -d @jsons/authTest.json | json_pp
+curl https://hackathonfiesp2017-marcogorak.c9users.io/auth -X POST -v -H "Content-type: application/json" -d @jsons/authTest.json | json_pp
+
+
 
 =================================================================================================================
 GET - Consulta dos próprios dados cadastrais do usuário autenticado enviando o respectivo token da requisição
@@ -52,3 +61,10 @@ curl http://localhost:3000/user -X DELETE -v -H "Content-type: application/json"
 GET - A consulta tem que ser feita com um token de um usuário que possui permissão de consulta aos usuários da base, cuidado que essa consulta é critica e qualquer vazamento dela pode trazer grandes prejuízos
 
 curl http://localhost:3000/users -X GET -v -H "Content-type: application/json" -H "x-access-token: Key!"
+
+
+=================================================================================================================
+
+POST Suspect
+
+curl https://hackathonfiesp2017-marcogorak.c9users.io/suspect -X POST -v -H "Content-type: application/json" -d @jsons/suspectCreatePost.json | json_pp

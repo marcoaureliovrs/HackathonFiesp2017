@@ -6,5 +6,6 @@ module.exports = function (app) {
 
 	app.route("/suspect")
 		.delete(api.deleteSuspect)
+		.post(api.add)
 		.put(api.updateSuspect);
 }
