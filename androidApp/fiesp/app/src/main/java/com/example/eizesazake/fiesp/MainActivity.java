@@ -8,6 +8,7 @@ import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
@@ -66,6 +67,7 @@ public class MainActivity extends Activity
     private String latlong;
 
     private Ringtone r;
+    Uri alert;
 
     private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
@@ -80,11 +82,20 @@ public class MainActivity extends Activity
 //            if(alert == null){
                 // alert is null, using backup
             Uri alert = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
-            r = RingtoneManager.getRingtone(getApplicationContext(), alert);
-            r.play();
-            AlertDialog.Builder builder = new AlertDialog.Builder(context);
-            builder.setTitle("Alerta Fiscal Cidação");
-            builder.setMessage("Confirme a situação da obra localizada em: " + address).show();
+            if (r == null) {
+                r = RingtoneManager.getRingtone(getApplicationContext(), alert);
+                r.play();
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder.setTitle("Alerta Fiscal Cidação");
+                builder.setMessage("Confirme a situação da obra localizada em: " + address).show();
+                builder.setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int whichButton) {
+
+                                r.stop();
+                            }
+                        }).show();
+            }
         }
     };
 
