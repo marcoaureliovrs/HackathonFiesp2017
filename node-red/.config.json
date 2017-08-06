@@ -458,6 +458,24 @@
      "file": "/Users/user/projects/HackathonFiesp2017/node-red/node_modules/node-red-node-mongodb/66-mongodb.js"
     }
    }
+  },
+  "node-red-node-discovery": {
+   "name": "node-red-node-discovery",
+   "version": "0.0.18",
+   "local": true,
+   "nodes": {
+    "discovery": {
+     "name": "discovery",
+     "types": [
+      "discovery",
+      "announce"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-discovery",
+     "file": "/Users/user/projects/HackathonFiesp2017/node-red/node_modules/node-red-node-discovery/mdns.js"
+    }
+   }
   }
  },
  "_credentialSecret": "e6d4874a4d85d696fad35317b7e6b136c5766161d22de2472afeb56b5652bf9c"
