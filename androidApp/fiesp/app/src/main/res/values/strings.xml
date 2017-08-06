@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fiscal Cidadão</string>
+
+    <string name="title_section1">Denunciar</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_enviar">Enviar</string>
+
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hint_desc_denuncia">Descreva em detalhes sua denúncia.</string>
+    <string name="desc_denuncia">Descrição da Denúncia:</string>
+    <string name="your_geo">Sua Geolocalização:</string>
+</resources>

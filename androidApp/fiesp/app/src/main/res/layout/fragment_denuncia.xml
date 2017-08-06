@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:context="com.example.eizesazake.fiesp.DenunciaFragment"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingBottom="15dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="12dp"
+              android:paddingTop="15dp">
+
+    <FrameLayout
+        android:id="@+id/activity_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar style="?android:attr/progressBarStyleLarge"
+                     android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:layout_marginBottom="8dp" android:paddingTop="5dp"
+                     android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_geo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/gray_5"
+                android:typeface="serif"
+                android:text="@string/your_geo"
+                android:textSize="19sp"/>
+
+            <TextView
+                android:id="@+id/tv_geo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_geo_title"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/gray_5"
+                android:typeface="serif"
+                android:text="@string/desc_denuncia"
+                android:textSize="19sp"/>
+
+            <TextView
+                android:id="@+id/tv_desc_denuncia_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_geo"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/gray_5"
+                android:typeface="serif"
+                android:text="@string/desc_denuncia"
+                android:textSize="19sp"/>
+
+            <EditText
+                android:id="@+id/et_tv_desc_denuncia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_desc_denuncia_title"
+                android:textSize="21sp"
+                android:inputType="textMultiLine"
+                android:hint="@string/hint_desc_denuncia"
+                android:textColorHint="@color/gray_2"
+                android:textColor="@color/black"
+                android:imeOptions="actionDone"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/tvCharacterCounter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_tv_desc_denuncia"
+                style="@android:style/TextAppearance.Small"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
