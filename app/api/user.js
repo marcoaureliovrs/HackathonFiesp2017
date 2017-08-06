@@ -11,11 +11,13 @@ api.search = function(req, res) {
     	{latitude: req.body.lat, longitude: req.body.lng},
     	{latitude: "51° 31' N", longitude: "7° 28' E"}
 	);
+	console.log(req.body.lat);
+	console.log(req.body.lng);
 	
-    if(result <100) {
-    	res.json({"alarme":"ok"});
+    if(result >100) {
+    	res.json({"result":"ok"});
     } else {
-    	res.json({"alarme":""});
+    	res.json({"result":""});
     }
 }
 

@@ -1,7 +1,7 @@
 module.exports = function (app) {
 	var api = app.api.user;
 	
-	app.route('/geolocation').get(api.search);
+	app.route('/geolocation').post(api.search);
 	
 	app.route('/users')
 		.get(api.list);
