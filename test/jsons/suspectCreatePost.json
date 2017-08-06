@@ -1,7 +1,7 @@
 {
-    "lat":"-44.4444",
-    "log": "-33.4444",
+    "lat":"444444",
+    "log":"334444",
     "description":"Teste de JSON",
-    "archive1": "https://laradiodelsur.com.ve/wp-content/uploads/2015/06/ministerio-publico2.jpg",
-    "archive2": "https://laradiodelsur.com.ve/wp-content/uploads/2015/06/ministerio-publico2.jpg"
+    "archive1":"https://laradiodelsur.com.ve/wp-content/uploads/2015/06/ministerio-publico2.jpg",
+    "archive2":"https://laradiodelsur.com.ve/wp-content/uploads/2015/06/ministerio-publico2.jpg"
 }

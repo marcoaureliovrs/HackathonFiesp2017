@@ -68,3 +68,13 @@ curl http://localhost:3000/users -X GET -v -H "Content-type: application/json" -
 POST Suspect
 
 curl https://hackathonfiesp2017-marcogorak.c9users.io/suspect -X POST -v -H "Content-type: application/json" -d @jsons/suspectCreatePost.json | json_pp
+
+
+
+curl https://hackathonfiesp2017-marcogorak.c9users.io/geolocation -X POST -v -H "Content-type: application/json" -d @jsons/geolocation.json | json_pp
+
+=================================================================================================================
+
+POST - Construction 
+curl https://hackathonfiesp2017-marcogorak.c9users.io/construction -X POST -v -H "Content-type: application/json" -d @jsons/constructionCreate.json | json_pp
+
